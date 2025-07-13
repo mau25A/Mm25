@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Malla Interactiva</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Malla Curricular Interactiva</h1>
+
+<div class="contenedor">
+
+<!-- Ejemplo de 1 ramo interactivo -->
+<div class="semestre">
+<h2>1° Semestre</h2>
+<div class="ramo" onclick="mostrarInfo(this)">
+Fundamentos de Enfermería I
+<div class="info-ramo">
+<p><strong>Créditos:</strong> 5</p>
+<p><strong>Descripción:</strong> Introducción a los cuidados básicos de enfermería.</p>
+<p><strong>Requisito:</strong> Ninguno</p>
+</div>
+</div>
+
+<div class="ramo" onclick="mostrarInfo(this)">
+Química General
+<div class="info-ramo">
+<p><strong>Créditos:</strong> 4</p>
+<p><strong>Requisito:</strong> Matemáticas</p>
+</div>
+</div>
+
+<!-- Puedes seguir agregando más ramos igual -->
+</div>
+
+</div>
+
+<script>
+function mostrarInfo(elemento) {
+const info = elemento.querySelector(".info-ramo");
+info.classList.toggle("mostrar");
+}
+</script>
+</body>
+</html>
